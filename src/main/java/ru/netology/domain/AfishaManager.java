@@ -1,44 +1,41 @@
 package ru.netology.domain;
 
+import ru.netology.repository.MovieRepository;
+
 public class AfishaManager {
-    private String[] afisha = new String[0];
-    private int limit;
+    private MovieRepository repo;
 
-    public AfishaManager() {                               // Конструктор 1, без параметра
-        this.limit = 10;
+    public AfishaManager(MovieRepository repo) {
+        this.repo = repo;
+    }
+
+    public void add(AfishaItem item) {                              // Добавление фильма
+        repo.save(item);
+    }
+
+    public AfishaItem[] findAll() {
+        AfishaItem[] all = repo.findAll();                          // Вывод всех фильмов
+        return all;
+    }
+
+    public AfishaItem[] findById() {
+        int i = 5;
+        AfishaItem[] movie = repo.findById(i);                      // Нахождение объекта по идентификатору
+
+        return movie;
+
+    }
+    public AfishaItem[] removeById() {
+        int i = 3;
+        AfishaItem[] afterRemove = repo.removeById(i);              // Удаление объекта по идентификатору
+        return afterRemove;
 
     }
 
-    public AfishaManager(int limit) {                     // Конструктор 2, с параметром
-        this.limit = limit;
-
+    public AfishaItem[] removeAll() {
+        AfishaItem[] zero = repo.removeAll();                      // Удаление всех элементов из массива
+        return zero;
     }
 
-    public void add(String movie) {                       // Добавление фильма
-        String[] tmp = new String[afisha.length + 1];
-        for (int i = 0; i < afisha.length; i++) {
-            tmp[i] = afisha[i];
-        }
-        tmp[tmp.length - 1] = movie;
-        afisha = tmp;
-    }
 
-    public String[] findAll() {                       // Вывод всех фильмов в порядке добавления
-        return afisha;
-
-    }
-
-    public String[] findLast() {                       // Вывод последних фильмов в побратном порядке
-        int resultLenth;
-        if (afisha.length < limit) {
-            resultLenth = afisha.length;
-        } else {
-            resultLenth = limit;
-        }
-        String[] result = new String[resultLenth];
-        for (int i = 0; i < result.length; i++) {
-            result[i] = afisha[afisha.length - 1 - i];
-        }
-        return result;
-    }
 }
