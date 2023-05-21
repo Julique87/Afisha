@@ -7,22 +7,22 @@ public class MovieRepository {
 
     private int limit;
 
-    public MovieRepository() {                                      // Конструктор 1, без параметра
+    private MovieRepository() {                                            // Конструктор 1, без параметра
         this.limit = 10;
 
     }
 
 
-    public MovieRepository(int limit) {                            // Конструктор 2, с параметром
+    private MovieRepository(int limit) {                            // Конструктор 2, с параметром
         this.limit = limit;
     }
 
 
-    public AfishaItem[] findAll() {                                // Возвращение всех элементов в массиве
+    public AfishaItem[] findAll() {                                       // Возвращение всех элементов в массиве
         return items;
     }
 
-    public void save(AfishaItem item) {                            // Добавление объекта в массив
+    public void save(AfishaItem item) {                                    // Добавление объекта в массив
         AfishaItem[] tmp = new AfishaItem[items.length + 1];
         for (int i = 0; i < items.length; i++) {
             tmp[i] = items[i];
@@ -44,7 +44,7 @@ public class MovieRepository {
             }
         }
         items = tmp;
-        return items;
+        return tmp;
     }
 
     public AfishaItem[] removeById(int id) {                               // Удаление объекта по идентификатору
@@ -56,15 +56,12 @@ public class MovieRepository {
                 copyToIndex++;
             }
         }
-        items = tmp;
-        return items;
+        return tmp;
     }
 
-    public AfishaItem[] removeAll() {                               // Удаление всех элементов из массива
+    public AfishaItem[] removeAll() {                                      // Удаление всех элементов из массива
         AfishaItem[] tmp = new AfishaItem[0];
-
-        items = tmp;
-        return items;
+        return tmp;
     }
 
 }

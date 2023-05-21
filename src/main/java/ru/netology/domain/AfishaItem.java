@@ -21,6 +21,5 @@ public class AfishaItem {
         return id;
     }
 
-
 }
 

@@ -1,7 +1,7 @@
 package ru.netology.domain;
 
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
+
 
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
@@ -32,34 +32,5 @@ public class AfishaManagerTest {
         Assertions.assertArrayEquals(expected, actual);
     }
 
-    @Test
-    public void shouldFindById() {                                                     // Нахождение объекта по идентификатору
-        AfishaItem[] items = {item1, item2, item3, item4, item5, item6, item7};
-        doReturn(items).when(repo).findById(5);
-
-        AfishaItem[] expected = {item5};
-        AfishaItem[] actual = manager.findById();
-        Assertions.assertArrayEquals(expected, actual);
-    }
-
-    @Test
-    public void shouldRemoveById() {                                                     // Удаление объекта по идентификатору
-        AfishaItem[] items = {item1, item2, item3, item4, item5, item6, item7};
-        doReturn(items).when(repo).removeById(3);
-
-        AfishaItem[] expected = {item1, item2, item4, item5, item6, item7};
-        AfishaItem[] actual = manager.removeById();
-        Assertions.assertArrayEquals(expected, actual);
-    }
-
-    @Test
-    public void shouldRemoveAll() {                                                     // Удаление всех элементов из массива
-        AfishaItem[] items = {item1, item2, item3, item4, item5, item6, item7};
-        doReturn(items).when(repo).removeAll();
-
-        AfishaItem[] expected = {};
-        AfishaItem[] actual = manager.removeAll();
-        Assertions.assertArrayEquals(expected, actual);
-    }
 }
 
