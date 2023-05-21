@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c39ad81e-eb00-46e8-ac49-db5aca393ed1" name="Changes" comment="" />
+    <list default="true" id="c39ad81e-eb00-46e8-ac49-db5aca393ed1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,10 +51,11 @@
 }</component>
   <component name="RunAnythingCache">
     <option name="myCommands">
-      <command value="mvn clean verify" />
       <command value="mvn tet" />
       <command value="mvn test" />
       <command value="mvn clean test" />
+      <command value="mvn clean verify" />
+      <command value="mvn -B -e verify" />
     </option>
   </component>
   <component name="RunManager" selected="JUnit.AfishaManagerTest.shouldFindAll">
