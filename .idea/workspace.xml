@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c39ad81e-eb00-46e8-ac49-db5aca393ed1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/domain/AfishaManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/netology/domain/AfishaManagerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/domain/AfishaManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/domain/AfishaManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/repository/MovieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/repository/MovieRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,18 +46,21 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_directory_selection": "C:/Users/user/Desktop/Netology/hw/Afisha/src/test/java",
-    "last_opened_file_path": "C:/Users/user/Desktop/Netology/hw/Afisha"
+    "last_directory_selection": "C:/Users/user/Desktop/Netology/hw/Afisha/src/main/java/ru/netology",
+    "last_opened_file_path": "C:/Users/user/Desktop/Netology/hw/Afisha1"
   }
 }]]></component>
   <component name="RunAnythingCache">
     <option name="myCommands">
+      <command value="mvn tet" />
+      <command value="mvn test" />
       <command value="mvn clean test" />
       <command value="mvn clean verify" />
+      <command value="mvn -B -e verify" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AfishaManagerTest.shouldТNotFindLastAboveBorderHighConstructor2">
-    <configuration name="AfishaManagerTest.shouldFind10LastConstructor1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AfishaManagerTest.shouldFindById">
+    <configuration name="AfishaManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="afisha" />
       <extension name="coverage">
         <pattern>
@@ -67,13 +70,28 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology.domain" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.domain.AfishaManagerTest" />
-      <option name="METHOD_NAME" value="shouldFind10LastConstructor1" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AfishaManagerTest.shouldFindAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="afisha" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.domain" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.domain.AfishaManagerTest" />
+      <option name="METHOD_NAME" value="shouldFindAll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AfishaManagerTest.shouldТNotFindLastAboveBorderHighConstructor1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AfishaManagerTest.shouldFindById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="afisha" />
       <extension name="coverage">
         <pattern>
@@ -83,7 +101,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology.domain" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.domain.AfishaManagerTest" />
-      <option name="METHOD_NAME" value="shouldТNotFindLastAboveBorderHighConstructor1" />
+      <option name="METHOD_NAME" value="shouldFindById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -105,7 +123,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AfishaManagerTest.shouldТNotFindLastAboveLimitConstructor1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AfishaManagerTest.shouldRemoveById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="afisha" />
       <extension name="coverage">
         <pattern>
@@ -115,23 +133,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology.domain" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.domain.AfishaManagerTest" />
-      <option name="METHOD_NAME" value="shouldТNotFindLastAboveLimitConstructor1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AfishaManagerTest.shouldТNotFindLastAboveLimitConstructor2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="afisha" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.netology.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.netology.domain" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.domain.AfishaManagerTest" />
-      <option name="METHOD_NAME" value="shouldТNotFindLastAboveLimitConstructor2" />
+      <option name="METHOD_NAME" value="shouldRemoveById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -152,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AfishaManagerTest.shouldFindById" />
+        <item itemvalue="JUnit.AfishaManagerTest.shouldFindAll" />
+        <item itemvalue="JUnit.AfishaManagerTest.shouldRemoveById" />
+        <item itemvalue="JUnit.AfishaManagerTest" />
         <item itemvalue="JUnit.AfishaManagerTest.shouldТNotFindLastAboveBorderHighConstructor2" />
-        <item itemvalue="JUnit.AfishaManagerTest.shouldТNotFindLastAboveBorderHighConstructor1" />
-        <item itemvalue="JUnit.AfishaManagerTest.shouldТNotFindLastAboveLimitConstructor2" />
-        <item itemvalue="JUnit.AfishaManagerTest.shouldТNotFindLastAboveLimitConstructor1" />
-        <item itemvalue="JUnit.AfishaManagerTest.shouldFind10LastConstructor1" />
       </list>
     </recent_temporary>
   </component>
