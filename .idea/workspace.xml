@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c39ad81e-eb00-46e8-ac49-db5aca393ed1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/domain/AfishaManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/domain/AfishaManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/repository/MovieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/repository/MovieRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,14 +42,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/user/Desktop/Netology/hw/Afisha/src/main/java/ru/netology&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Desktop/Netology/hw/Afisha&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_directory_selection": "C:/Users/user/Desktop/Netology/hw/Afisha/src/main/java/ru/netology",
+    "last_opened_file_path": "C:/Users/user/Desktop/Netology/hw/Afisha1"
   }
-}</component>
+}]]></component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn tet" />
@@ -58,7 +59,7 @@
       <command value="mvn -B -e verify" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AfishaManagerTest.shouldFindAll">
+  <component name="RunManager" selected="JUnit.AfishaManagerTest.shouldFindById">
     <configuration name="AfishaManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="afisha" />
       <extension name="coverage">
@@ -153,10 +154,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AfishaManagerTest.shouldFindById" />
         <item itemvalue="JUnit.AfishaManagerTest.shouldFindAll" />
         <item itemvalue="JUnit.AfishaManagerTest.shouldRemoveById" />
         <item itemvalue="JUnit.AfishaManagerTest" />
-        <item itemvalue="JUnit.AfishaManagerTest.shouldFindById" />
         <item itemvalue="JUnit.AfishaManagerTest.shouldТNotFindLastAboveBorderHighConstructor2" />
       </list>
     </recent_temporary>

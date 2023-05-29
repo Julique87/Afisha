@@ -2,8 +2,6 @@ package ru.netology.domain;
 
 import ru.netology.repository.MovieRepository;
 
-import java.util.Arrays;
-
 public class AfishaManager {
     private MovieRepository repo;
 
@@ -36,4 +34,10 @@ public class AfishaManager {
         AfishaItem[] zero = repo.removeAll();                       // Удаление всех элементов из массива
         return zero;
     }
+
+    public String[] findLast() {
+        String[] lastFilms = repo.findLast();                       // Вывод последних фильмов в обратном порядке
+        return lastFilms;
+    }
+
 }

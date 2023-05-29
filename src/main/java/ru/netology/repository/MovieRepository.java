@@ -44,7 +44,7 @@ public class MovieRepository {
             }
         }
         items = tmp;
-        return tmp;
+        return items;
     }
 
     public AfishaItem[] removeById(int id) {                               // Удаление объекта по идентификатору
@@ -62,6 +62,20 @@ public class MovieRepository {
     public AfishaItem[] removeAll() {                                      // Удаление всех элементов из массива
         AfishaItem[] tmp = new AfishaItem[0];
         return tmp;
+    }
+
+    public String[] findLast() {                                           // Вывод последних фильмов в обратном порядке
+        int resultLenth;
+        if (items.length < limit) {
+            resultLenth = items.length;
+        } else {
+            resultLenth = limit;
+        }
+        String[] result = new String[resultLenth];
+        for (int i = 0; i < result.length; i++) {
+            result[i] = items[items.length - 1 - i].toString();
+        }
+        return result;
     }
 
 }
